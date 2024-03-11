@@ -1,11 +1,7 @@
 body {
   background-image: url('imagem/4258797.jpg');
-  background-size: cover; /* para cobrir todo o corpo */
-  background-repeat: no-repeat; /* para não repetir a imagem */
-  /* outras propriedades de estilo, se necessário */
-}
-
-body {
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,6 +13,7 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -66,4 +63,13 @@ button:hover {
 #editButton,
 #deleteButton {
   display: none;
+}
+
+/* Media queries para ajustar o layout em telas menores */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
