@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Animes</title>
+    <link rel="stylesheet" href="styller.css" />
+    <link rel="icon" href="imagem/4258797.jpg" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastre seu Anime</h1>
+      <form id="animeForm">
+        <label for="animeName">Nome do anime:</label><br />
+        <input type="text" id="animeName" name="animeName" required /><br />
+
+        <label for="favoriteCharacter">Personagem Favorito:</label><br />
+        <input
+          type="text"
+          id="favoriteCharacter"
+          name="favoriteCharacter"
+          required
+        /><br />
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+
+      <div id="displayArea"></div>
+
+      <button id="editButton" onclick="editInfo()">Editar</button>
+      <button id="deleteButton" onclick="removeInfo()">Excluir</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
